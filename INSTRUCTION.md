@@ -5,6 +5,8 @@ The bootstrap.sh script contains all the commands to create the cluster and depl
 Run the following commands to initialize the KinD cluster and deploy all resources.
 
 ```bash
+kind create cluster --name todoapp-cluster --config cluster.yml
+
 ./bootstrap.sh
 ```
 

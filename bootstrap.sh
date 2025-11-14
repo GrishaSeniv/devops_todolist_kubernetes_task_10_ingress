@@ -1,8 +1,4 @@
 #!/bin/bash
-brew install kind
-
-kind create cluster --name todoapp-cluster --config cluster.yml
-
 kubectl apply -f .infrastructure/mysql/ns.yml
 kubectl apply -f .infrastructure/mysql/configMap.yml
 kubectl apply -f .infrastructure/mysql/secret.yml
